@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zomato Clone</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f8f8f8;
+    }
+
+    /* Header */
+    header {
+      background-color: #ff3c3c;
+      color: white;
+      text-align: left;
+      width: 100%;
+      padding: 15px ;
+      font-size: 28px;
+      font-weight: bold;
+    }
+    header {
+  background-color: #e74c3c; /* Red Zomato color */
+  color: white;
+  padding: 20px 40px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between; /* moves login to right */
+  align-items: center; /* vertically centers text */
+}
+
+.logo {
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.login {
+  color: #dcf1ff; /* blue login text */
+  text-decoration: none;
+  font-size: 10px;
+  padding: 10px 20px 10px 385px;
+}
+
+.login:hover {
+  text-decoration: underline;
+}
+.signup{
+    color: #dcf1ff;
+    text-decoration: none;
+    font-size: 10px;
+    
+}
+
+
+
+
+    /* Search Bar */
+    .search-bar {
+      text-align: center;
+      margin: 20px;
+    }
+
+    input[type="text"] {
+      width: 70%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 16px;
+    }
+
+    button {
+      padding: 10px 15px;
+      background-color: #ff4d4d;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    button:hover {
+      background-color: #e04343;
+    }
+
+    /* Restaurant Cards */
+    .restaurants {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      margin: 20px;
+    }
+
+    .card {
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      width: 250px;
+      text-align: center;
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+    }
+
+    .card img {
+      width: 100%;
+      height: 150px;
+      border-radius: 10px 10px 0 0;
+      object-fit: cover;
+    }
+
+    .card h3 {
+      margin: 10px 0 5px;
+    }
+
+    .card p {
+      color: #555;
+      margin-bottom: 15px;
+      font-size: 14px;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #ff4d4d;
+      color: white;
+      text-align: center;
+      padding: 10px 0;
+      font-size: 14px;
+      margin-top: 30px;
+    }
+
+    /* Responsive */
+    @media (max-width: 600px) {
+      input[type="text"] {
+        width: 90%;
+      }
+
+      .restaurants {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="navbar">
+      <div class="logo">Zomato</div>
+      <a href="#" class="login">Login</a>
+      <a href="#" class="signup">Sign up</a>
+    </div>
+    
+  </header>
+
+  <div class="search-bar">
+    <input type="text" placeholder="Search for restaurants, cuisines or dishes...                          🔍"><br><br>
+    <button class="tool">search</button>
+  </div>
+
+  <div class="restaurants">
+    <div class="card">
+      <img src="https://media.istockphoto.com/id/1158623408/photo/indian-hindu-veg-thali-food-platter-selective-focus.webp?a=1&b=1&s=612x612&w=0&k=20&c=WOCrpfQJRlyY9W84K4iAaIfJVCWbIs_UroFYKK9y1Qg=">
+      <h3>The Spice Hub</h3>
+      <p>North Indian • ₹350</p>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cGl6emF8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&q=60&w=900" alt="Restaurant 2">
+      <h3>Pizza Palace</h3>
+      <p>Italian • ₹400 for two</p>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1668236543090-82eba5ee5976?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8ZG9zYXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&q=60&w=900" alt="Restaurant 3">
+      <h3>Daily Dosa</h3>
+      <p>South Indian • ₹250</p>
+    </div>
+
+    <div class="card">
+      <img src="https://plus.unsplash.com/premium_photo-1683655058728-415f4f2674bf?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fGJ1cmdlcnxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&q=60&w=900" alt="Restaurant 4">
+      <h3>Burger Point</h3>
+      <p>Fast Food • ₹79 for two</p>
+    </div>
+  </div>
+
+  <footer>© 2025 Zomato Clone | Made with ❤️ using HTML & CSS</footer>
+</body>
+</html>
