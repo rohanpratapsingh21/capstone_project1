@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta-name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Food Delivery</title>
+
+  <link rel="stylesheet" href="food2.css">
+</head>
+
+<body>
+
+  <header>
+    <div class="navbar">
+      <div class="logo">DineDash</div>
+      <div class="cart-box">
+        🛒 <span id="cart-count">0</span>
+        <button id="toggleDark">Dark Mode</button>
+
+      </div>
+    </div>
+
+    <div class="topnav">
+      <a href="#home" class="active">Home</a>
+      <a href="offers.html">Offers</a>
+      <a href="#Foods">Foods</a>
+      <a href="#Services">Services</a>
+      <a href="#Restaurant">Restaurant</a>
+      
+      <a href="#" class="profile-btn">
+        <img src="profile.png" alt="Profile Icon">
+      </a>
+    </div>
+  </header>
+
+  <div class="search-bar">
+    <input type="text" placeholder="Search for restaurants, cuisines or dishes">
+    <button class="tool">Search</button>
+  </div>
+
+  <div class="restaurants">
+
+    <div class="card">
+      <img src="https://media.istockphoto.com/id/1158623408/photo/indian-hindu-veg-thali-food-platter-selective-focus.webp?a=1&b=1&s=612x612&w=0&k=20&c=WOCrpfQJRlyY9W84K4iAaIfJVCWbIs_UroFYKK9y1Qg=">
+      <h3>The Spice Hub</h3>
+      <p>North Indian • ₹350</p>
+      <button onclick="addToCart()">Add to Cart</button>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&q=60&w=900">
+      <h3>Pizza Palace</h3>
+      <p>Italian • ₹400</p>
+      <button onclick="addToCart()">Add to Cart</button>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1668236543090-82eba5ee5976?auto=format&fit=crop&q=60&w=900">
+      <h3>Daily Dosa</h3>
+      <p>South Indian • ₹250</p>
+      <button onclick="addToCart()">Add to Cart</button>
+    </div>
+
+    <div class="card">
+      <img src="https://plus.unsplash.com/premium_photo-1683655058728-415f4f2674bf?auto=format&fit=crop&q=60&w=900">
+      <h3>Burger Point</h3>
+      <p>Fast Food • ₹79</p>
+      <button onclick="addToCart()">Add to Cart</button>
+    </div>
+    <script src="food2.js"></script>
+
+  </div>
+
+  <footer>
+    © 2025 DineDash Delivery.com | Made with ❤️ using HTML & CSS
+  </footer>
+
+</body>
+</html>
